@@ -13,6 +13,7 @@ body {
     background-color: #f4f4f4;
     color: #222;
     line-height: 1.5;
+    min-width: 320px;
 }
 
 a {
@@ -59,20 +60,21 @@ nav.menu {
     background-color: #24345c;
 }
 
-nav.menu ul {
+.lista-menu {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-nav.menu ul li a {
+.item-menu a {
     display: block;
     color: #fff;
     padding: 0.8rem 1.2rem;
     transition: background-color 0.2s ease;
 }
 
-nav.menu ul li a:hover {
+.item-menu a:hover {
     background-color: #3a4e82;
 }
 
@@ -134,6 +136,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
+    justify-content: center;
 }
 
 .card-anuncio {
@@ -142,7 +145,7 @@ main {
     overflow: hidden;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     flex: 1 1 250px;
-    max-width: 270px;
+    max-width: 340px;
     display: flex;
     flex-direction: column;
 }
@@ -225,6 +228,7 @@ main {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-family: inherit;
+    width: 100%;
 }
 
 .formulario button {
@@ -298,6 +302,7 @@ main {
 
 table.tabela-listagem {
     width: 100%;
+    min-width: 620px;
     border-collapse: collapse;
     background-color: #fff;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -324,7 +329,8 @@ table.tabela-listagem img {
 
 .acoes-tabela a,
 .acoes-tabela button {
-    margin-right: 0.5rem;
+    display: inline-block;
+    margin: 0.2rem 0.3rem 0.2rem 0;
     font-size: 0.85rem;
     padding: 0.4rem 0.7rem;
     border-radius: 4px;
@@ -357,22 +363,65 @@ footer.rodape {
         gap: 0.8rem;
     }
 
-    nav.menu ul {
+    .lista-menu {
         flex-direction: column;
         text-align: center;
+    }
+
+    .item-menu a {
+        padding: 0.7rem;
+    }
+
+    main {
+        margin: 1rem auto;
+        padding: 0 0.8rem;
     }
 
     .painel-busca {
         flex-direction: column;
         align-items: stretch;
+        padding: 1rem;
+    }
+
+    .painel-busca .campo,
+    .painel-busca button {
+        width: 100%;
+        flex-basis: auto;
+    }
+
+    .lista-anuncios {
+        gap: 1rem;
+    }
+
+    .card-anuncio {
+        max-width: none;
+        flex-basis: 100%;
+    }
+
+    .formulario {
+        padding: 1.2rem;
+        max-width: 100%;
+    }
+
+    .acoes-restrita a {
+        flex-basis: 100%;
+        padding: 0.8rem;
     }
 
     table.tabela-listagem {
-        font-size: 0.8rem;
+        display: block;
+        overflow-x: auto;
+        font-size: 0.85rem;
+        white-space: nowrap;
     }
 
-    table.tabela-listagem th:nth-child(1),
-    table.tabela-listagem td:nth-child(1) {
-        display: none; /* esconde a coluna de foto em telas pequenas, por exemplo */
+    table.tabela-listagem th,
+    table.tabela-listagem td {
+        padding: 0.6rem;
+    }
+
+    footer.rodape {
+        margin-top: 2rem;
+        padding: 1rem;
     }
 }
