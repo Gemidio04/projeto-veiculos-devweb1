@@ -1,0 +1,31 @@
+COMO ADICIONAR AS FOTOS DOS VEÍCULOS
+======================================
+
+O código já está pronto para usar 3 fotos locais. Você só precisa:
+
+1. Baixar 3 fotos de veículos em um banco de imagens gratuito, por exemplo:
+   - https://www.pexels.com/pt-br/buscar/carro/
+   - https://unsplash.com/pt-br/s/fotos/carro
+   - https://pixabay.com/pt/images/search/carro/
+
+2. Salvar cada foto NESTA pasta (assets/img/) com EXATAMENTE estes nomes:
+
+   fiat-uno.jpg         -> foto de um carro popular branco (ex: hatch compacto)
+   chevrolet-onix.jpg   -> foto de um carro popular prata
+   vw-gol.jpg           -> foto de um carro popular preto
+
+   Obs: não precisa ser o modelo exato (Uno, Onix, Gol) - qualquer
+   foto de carro popular condizente com a cor/estilo já resolve,
+   já que os dados são fictícios para fins acadêmicos.
+
+3. Se preferir usar fotos de outros carros/marcas, é só renomear o arquivo
+   salvo com o nome correspondente acima (ou me avisar para eu ajustar
+   o nome dos arquivos no código).
+
+4. Depois de colocar as fotos aqui, é só abrir o index.html no navegador
+   para conferir se aparecem corretamente.
+
+IMPORTANTE: como o projeto exige "conteúdo próprio ou sem plágio",
+utilize apenas fotos de bancos de imagens gratuitos e de uso livre
+(não utilize fotos de sites de anúncio reais, como OLX/Webmotors,
+para evitar qualquer problema de direitos de imagem).

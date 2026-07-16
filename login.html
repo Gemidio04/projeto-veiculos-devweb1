@@ -24,9 +24,10 @@
     </nav>
 
     <main>
-        <!-- Nesta etapa o formulário não tem funcionalidade real (sem JS/back-end ainda) -->
-        <form class="formulario" action="#" method="post">
+        <form class="formulario" id="form-login" action="#" method="post">
             <h2>Entrar</h2>
+
+            <div id="mensagem-envio"></div>
 
             <div class="campo">
                 <label for="email">E-mail</label>
@@ -47,6 +48,12 @@
     <footer class="rodape">
         <p>&copy; 2026 AutoPonto - Projeto acadêmico UFU - Desenvolvimento Web I</p>
     </footer>
+
+    <script>const CAMINHO_BASE = '';</script>
+    <script src="js/storage.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/validacao.js"></script>
+    <script src="js/login.js"></script>
 
 </body>
 </html>

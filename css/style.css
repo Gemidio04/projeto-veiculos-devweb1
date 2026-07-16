@@ -241,6 +241,33 @@ main {
     background-color: #24345c;
 }
 
+/* Estilos de validação (usados pelo js/validacao.js) */
+.erro-campo {
+    color: #c53030;
+    font-size: 0.8rem;
+    margin-top: -0.4rem;
+}
+
+.campo-invalido {
+    border-color: #c53030 !important;
+}
+
+.mensagem-sucesso {
+    background-color: #e6f4ea;
+    color: #1a7a3d;
+    padding: 0.8rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.mensagem-erro-login {
+    background-color: #fbe9e9;
+    color: #c53030;
+    padding: 0.8rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
 .formulario .link-alt {
     text-align: center;
     font-size: 0.9rem;

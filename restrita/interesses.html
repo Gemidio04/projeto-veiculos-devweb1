@@ -20,12 +20,12 @@
             <li><a href="dashboard.html">Painel</a></li>
             <li><a href="novo-anuncio.html">Novo Anúncio</a></li>
             <li><a href="meus-anuncios.html">Meus Anúncios</a></li>
-            <li><a href="../index.html">Sair (logoff)</a></li>
+            <li><a href="#" id="link-logoff">Sair (logoff)</a></li>
         </ul>
     </nav>
 
     <main>
-        <h2 style="margin-bottom: 1rem;">Interesses recebidos - Fiat Uno 2018</h2>
+        <h2 id="titulo-interesses" style="margin-bottom: 1rem;">Interesses recebidos</h2>
 
         <table class="tabela-listagem">
             <thead>
@@ -36,30 +36,23 @@
                     <th>Ações</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>Maria Souza</td>
-                    <td>(34) 99999-1111</td>
-                    <td>Olá, tenho interesse. O carro ainda está disponível?</td>
-                    <td class="acoes-tabela">
-                        <button type="button" class="btn-excluir">Excluir</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Carlos Lima</td>
-                    <td>(34) 98888-2222</td>
-                    <td>Aceita troca com um veículo mais antigo?</td>
-                    <td class="acoes-tabela">
-                        <button type="button" class="btn-excluir">Excluir</button>
-                    </td>
-                </tr>
+            <tbody id="corpo-tabela-interesses">
             </tbody>
         </table>
+
+        <p id="mensagem-vazio" style="display: none; margin-top: 1rem;">
+            Nenhum interesse recebido neste anúncio ainda.
+        </p>
     </main>
 
     <footer class="rodape">
         <p>&copy; 2026 AutoPonto - Projeto acadêmico UFU - Desenvolvimento Web I</p>
     </footer>
+
+    <script>const CAMINHO_BASE = '../';</script>
+    <script src="../js/storage.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/interesses.js"></script>
 
 </body>
 </html>

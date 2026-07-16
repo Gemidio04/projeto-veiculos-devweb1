@@ -1,0 +1,99 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "nome": "João da Silva",
+            "cpf": "12345678900",
+            "email": "joao@example.com",
+            "senha": "123456",
+            "telefone": "(34) 99999-0000"
+        }
+    ],
+    "veiculos": [
+        {
+            "id": 1,
+            "marca": "Fiat",
+            "modelo": "Uno",
+            "ano": 2018,
+            "cor": "Branco",
+            "km": 45000,
+            "descricao": "Único dono, revisado, pneus novos, ar-condicionado.",
+            "valor": 38900,
+            "estado": "MG",
+            "cidade": "Uberlândia",
+            "foto": "assets/img/fiat-uno.jpg",
+            "idAnunciante": 1,
+            "dataHora": "2026-06-01T10:00:00"
+        },
+        {
+            "id": 2,
+            "marca": "Chevrolet",
+            "modelo": "Onix",
+            "ano": 2020,
+            "cor": "Prata",
+            "km": 30000,
+            "descricao": "Completo, único dono, todas revisões em concessionária.",
+            "valor": 62500,
+            "estado": "MG",
+            "cidade": "Uberaba",
+            "foto": "assets/img/chevrolet-onix.jpg",
+            "idAnunciante": 1,
+            "dataHora": "2026-06-05T14:30:00"
+        },
+        {
+            "id": 3,
+            "marca": "Volkswagen",
+            "modelo": "Gol",
+            "ano": 2019,
+            "cor": "Preto",
+            "km": 52000,
+            "descricao": "Bem conservado, pneus seminovos.",
+            "valor": 45000,
+            "estado": "MG",
+            "cidade": "Uberlândia",
+            "foto": "assets/img/vw-gol.jpg",
+            "idAnunciante": 1,
+            "dataHora": "2026-06-10T09:15:00"
+        },
+        {
+            "id": 4,
+            "marca": "Fiat",
+            "modelo": "Argo",
+            "ano": 2021,
+            "cor": "Vermelho",
+            "km": 20000,
+            "descricao": "Seminovo, garantia de fábrica restante.",
+            "valor": 58000,
+            "estado": "SP",
+            "cidade": "São Paulo",
+            "foto": "assets/img/fiat-uno.jpg",
+            "idAnunciante": 1,
+            "dataHora": "2026-06-15T11:00:00"
+        },
+        {
+            "id": 5,
+            "marca": "Chevrolet",
+            "modelo": "Onix",
+            "ano": 2022,
+            "cor": "Branco",
+            "km": 15000,
+            "descricao": "Praticamente novo, garantia de fábrica.",
+            "valor": 75000,
+            "estado": "MG",
+            "cidade": "Uberlândia",
+            "foto": "assets/img/chevrolet-onix.jpg",
+            "idAnunciante": 1,
+            "dataHora": "2026-06-20T16:45:00"
+        }
+    ],
+    "interesses": [
+        {
+            "id": 1,
+            "idAnuncio": 1,
+            "nome": "Maria Souza",
+            "telefone": "(34) 99999-1111",
+            "mensagem": "Olá, tenho interesse. O carro ainda está disponível?",
+            "dataHora": "2026-06-02T09:00:00"
+        }
+    ]
+}

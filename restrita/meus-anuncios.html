@@ -20,15 +20,14 @@
             <li><a href="dashboard.html">Painel</a></li>
             <li><a href="novo-anuncio.html">Novo Anúncio</a></li>
             <li><a href="meus-anuncios.html">Meus Anúncios</a></li>
-            <li><a href="../index.html">Sair (logoff)</a></li>
+            <li><a href="#" id="link-logoff">Sair (logoff)</a></li>
         </ul>
     </nav>
 
     <main>
         <h2 style="margin-bottom: 1rem;">Meus anúncios</h2>
 
-        <!-- Tabela estática de exemplo. Na etapa final isso vira uma tabela
-             montada dinamicamente via JS a partir dos dados vindos do PHP/Ajax -->
+        <!-- Corpo da tabela preenchido dinamicamente por js/meus-anuncios.js -->
         <table class="tabela-listagem">
             <thead>
                 <tr>
@@ -39,36 +38,23 @@
                     <th>Ações</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td><img src="../assets/img/fiat-uno.jpg" alt="Fiat Uno"></td>
-                    <td>Fiat</td>
-                    <td>Uno</td>
-                    <td>2018</td>
-                    <td class="acoes-tabela">
-                        <a href="anuncio-detalhe.html" class="btn-ver">Ver</a>
-                        <a href="interesses.html" class="btn-interesses">Interesses</a>
-                        <button type="button" class="btn-excluir">Excluir</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td><img src="../assets/img/chevrolet-onix.jpg" alt="Chevrolet Onix"></td>
-                    <td>Chevrolet</td>
-                    <td>Onix</td>
-                    <td>2020</td>
-                    <td class="acoes-tabela">
-                        <a href="anuncio-detalhe.html" class="btn-ver">Ver</a>
-                        <a href="interesses.html" class="btn-interesses">Interesses</a>
-                        <button type="button" class="btn-excluir">Excluir</button>
-                    </td>
-                </tr>
+            <tbody id="corpo-tabela-anuncios">
             </tbody>
         </table>
+
+        <p id="mensagem-vazio" style="display: none; margin-top: 1rem;">
+            Você ainda não tem nenhum anúncio cadastrado.
+        </p>
     </main>
 
     <footer class="rodape">
         <p>&copy; 2026 AutoPonto - Projeto acadêmico UFU - Desenvolvimento Web I</p>
     </footer>
+
+    <script>const CAMINHO_BASE = '../';</script>
+    <script src="../js/storage.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/meus-anuncios.js"></script>
 
 </body>
 </html>

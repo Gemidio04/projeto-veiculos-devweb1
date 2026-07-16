@@ -32,8 +32,10 @@
 
     <main>
         <!-- Campos exatamente conforme especificado: nome, CPF, e-mail, senha, telefone -->
-        <form class="formulario" action="#" method="post">
+        <form class="formulario" id="form-cadastro" action="#" method="post">
             <h2>Criar conta de anunciante</h2>
+
+            <div id="mensagem-envio"></div>
 
             <div class="campo">
                 <label for="nome">Nome completo</label>
@@ -69,6 +71,11 @@
     <footer class="rodape">
         <p>&copy; 2026 AutoPonto - Projeto acadêmico UFU - Desenvolvimento Web I</p>
     </footer>
+
+    <script>const CAMINHO_BASE = '';</script>
+    <script src="js/storage.js"></script>
+    <script src="js/validacao.js"></script>
+    <script src="js/cadastro.js"></script>
 
 </body>
 </html>

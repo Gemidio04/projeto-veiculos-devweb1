@@ -20,15 +20,17 @@
             <li><a href="dashboard.html">Painel</a></li>
             <li><a href="novo-anuncio.html">Novo Anúncio</a></li>
             <li><a href="meus-anuncios.html">Meus Anúncios</a></li>
-            <li><a href="../index.html">Sair (logoff)</a></li>
+            <li><a href="#" id="link-logoff">Sair (logoff)</a></li>
         </ul>
     </nav>
 
     <main>
         <!-- Campos conforme especificado: marca, modelo, ano, cor, km, descrição,
              valor, estado, cidade e fotos (pelo menos 3) -->
-        <form class="formulario" action="#" method="post" enctype="multipart/form-data" style="max-width: 600px;">
+        <form class="formulario" id="form-novo-anuncio" action="#" method="post" enctype="multipart/form-data" style="max-width: 600px;">
             <h2>Criar novo anúncio</h2>
+
+            <div id="mensagem-envio"></div>
 
             <div class="campo">
                 <label for="marca">Marca</label>
@@ -92,6 +94,12 @@
     <footer class="rodape">
         <p>&copy; 2026 AutoPonto - Projeto acadêmico UFU - Desenvolvimento Web I</p>
     </footer>
+
+    <script>const CAMINHO_BASE = '../';</script>
+    <script src="../js/storage.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/validacao.js"></script>
+    <script src="../js/novo-anuncio.js"></script>
 
 </body>
 </html>

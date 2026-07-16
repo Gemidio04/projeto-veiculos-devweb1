@@ -24,22 +24,16 @@
     </nav>
 
     <main>
-        <!-- Dados estáticos de exemplo de um veículo -->
-        <section class="card-anuncio" style="max-width: 500px; margin: 0 auto 2rem;">
-            <img src="assets/img/fiat-uno.jpg" alt="Fiat Uno branco">
-            <div class="info">
-                <h2>Fiat Uno 2018</h2>
-                <p><strong>Cor:</strong> Branco</p>
-                <p><strong>Quilometragem:</strong> 45.000 km</p>
-                <p><strong>Cidade:</strong> Uberlândia - MG</p>
-                <p><strong>Descrição:</strong> Veículo único dono, revisado, pneus novos, ar-condicionado.</p>
-                <span class="preco">R$ 38.900</span>
-            </div>
+        <!-- Preenchido dinamicamente por js/detalhe.js, com base no ?id= da URL -->
+        <section class="card-anuncio" id="detalhe-veiculo" style="max-width: 500px; margin: 0 auto 2rem;">
+            <p style="padding: 1rem;">Carregando anúncio...</p>
         </section>
 
         <!-- Formulário de registro de interesse: nome, telefone e mensagem -->
-        <form class="formulario" action="#" method="post">
+        <form class="formulario" id="form-interesse" action="#" method="post">
             <h3>Tenho interesse neste veículo</h3>
+
+            <div id="mensagem-envio"></div>
 
             <div class="campo">
                 <label for="nome">Seu nome</label>
@@ -63,6 +57,11 @@
     <footer class="rodape">
         <p>&copy; 2026 AutoPonto - Projeto acadêmico UFU - Desenvolvimento Web I</p>
     </footer>
+
+    <script>const CAMINHO_BASE = '';</script>
+    <script src="js/storage.js"></script>
+    <script src="js/validacao.js"></script>
+    <script src="js/detalhe.js"></script>
 
 </body>
 </html>

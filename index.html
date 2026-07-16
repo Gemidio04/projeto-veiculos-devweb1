@@ -28,15 +28,13 @@
     <!-- ===================== CONTEÚDO PRINCIPAL ===================== -->
     <main>
 
-        <!-- Painel de busca: nesta etapa (estática) os selects não filtram nada de verdade -->
+        <!-- Painel de busca: os selects agora são preenchidos dinamicamente
+             pelo JavaScript (js/busca.js) com base nos dados carregados -->
         <section class="painel-busca" aria-label="Painel de busca de veículos">
             <div class="campo">
                 <label for="marca">Marca</label>
                 <select id="marca" name="marca">
                     <option value="">Todas</option>
-                    <option value="fiat">Fiat</option>
-                    <option value="chevrolet">Chevrolet</option>
-                    <option value="volkswagen">Volkswagen</option>
                 </select>
             </div>
 
@@ -44,9 +42,6 @@
                 <label for="modelo">Modelo</label>
                 <select id="modelo" name="modelo">
                     <option value="">Todos</option>
-                    <option value="uno">Uno</option>
-                    <option value="onix">Onix</option>
-                    <option value="gol">Gol</option>
                 </select>
             </div>
 
@@ -54,48 +49,23 @@
                 <label for="cidade">Localização</label>
                 <select id="cidade" name="cidade">
                     <option value="">Todas</option>
-                    <option value="uberlandia">Uberlândia</option>
-                    <option value="uberaba">Uberaba</option>
                 </select>
             </div>
 
-            <button type="button">Buscar</button>
+            <button type="button" id="btn-buscar">Buscar</button>
         </section>
 
-        <!-- Listagem de anúncios em cards (dados estáticos de exemplo) -->
+        <!-- Listagem de anúncios em cards: preenchida dinamicamente por js/busca.js -->
         <section class="lista-anuncios" aria-label="Lista de anúncios">
             <h2 style="width: 100%; margin-bottom: -0.5rem;">Últimos anúncios</h2>
 
-            <article class="card-anuncio">
-                <img src="assets/img/fiat-uno.jpg" alt="Fiat Uno branco">
-                <div class="info">
-                    <h3>Fiat Uno 2018</h3>
-                    <span class="local">Uberlândia - MG</span>
-                    <span class="preco">R$ 38.900</span>
-                </div>
-                <a href="veiculo-detalhe.html" class="btn-detalhe">Ver detalhes</a>
-            </article>
+            <div id="container-cards" style="display: contents;">
+                <!-- Cards inseridos aqui via JavaScript -->
+            </div>
 
-            <article class="card-anuncio">
-                <img src="assets/img/chevrolet-onix.jpg" alt="Chevrolet Onix prata">
-                <div class="info">
-                    <h3>Chevrolet Onix 2020</h3>
-                    <span class="local">Uberaba - MG</span>
-                    <span class="preco">R$ 62.500</span>
-                </div>
-                <a href="veiculo-detalhe.html" class="btn-detalhe">Ver detalhes</a>
-            </article>
-
-            <article class="card-anuncio">
-                <img src="assets/img/vw-gol.jpg" alt="Volkswagen Gol preto">
-                <div class="info">
-                    <h3>Volkswagen Gol 2019</h3>
-                    <span class="local">Uberlândia - MG</span>
-                    <span class="preco">R$ 45.000</span>
-                </div>
-                <a href="veiculo-detalhe.html" class="btn-detalhe">Ver detalhes</a>
-            </article>
-
+            <p id="mensagem-vazio" style="display: none; width: 100%;">
+                Nenhum anúncio encontrado com os filtros selecionados.
+            </p>
         </section>
     </main>
 
@@ -103,6 +73,11 @@
     <footer class="rodape">
         <p>&copy; 2026 AutoPonto - Projeto acadêmico UFU - Desenvolvimento Web I</p>
     </footer>
+
+    <!-- ===================== SCRIPTS ===================== -->
+    <script>const CAMINHO_BASE = '';</script>
+    <script src="js/storage.js"></script>
+    <script src="js/busca.js"></script>
 
 </body>
 </html>
